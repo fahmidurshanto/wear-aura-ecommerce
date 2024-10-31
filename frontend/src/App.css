@@ -40,6 +40,7 @@
   margin: auto;
   color: var(--text-light);
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .btn {
@@ -222,7 +223,7 @@ nav {
 .hero__content p {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--primary-color);
+  color: rgb(245, 244, 248);
 }
 
 .hero__content h4 {
@@ -230,11 +231,11 @@ nav {
   font-size: 1.25rem;
   font-weight: 800;
   font-family: var(--header-font);
-  color: var(--text-dark);
+  color: yellow;
 }
 
 .hero__content a {
-  color: var(--text-dark);
+  color: whitesmoke;
   text-decoration: underline;
 }
 

@@ -1,9 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
-import image_1 from "../../assets/category-1.jpg";
-import image_2 from "../../assets/category-2.jpg";
-import image_3 from "../../assets/category-3.jpg";
-import image_4 from "../../assets/category-4.jpg";
+import image_1 from "../../assets/jersey/wear-aura-logo.jpg";
+import image_2 from "../../assets/jersey/jersey.jpg";
+import image_3 from "../../assets/jersey/jersey2.jpg";
+import image_4 from "../../assets/jersey/jersey3.jpg";
+import image_5 from "../../assets/jersey/jersey4.jpg";
 
 function Fade() {
   const settings = {
@@ -32,6 +33,9 @@ function Fade() {
         </div>
         <div>
           <img className="w-full h-96 border-2" src={image_4} />
+        </div>
+        <div>
+          <img className="w-full h-96 border-2" src={image_5} />
         </div>
       </Slider>
     </div>

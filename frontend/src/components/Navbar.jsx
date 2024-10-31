@@ -4,16 +4,16 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const navLinks = (
     <>
-      <Link className=" m-2 hover:text-yellow-400" to="/">
+      <Link className=" m-2 hover:text-primary" to="/">
         Home
       </Link>
-      <Link className=" m-2 hover:text-yellow-400" to="/shop">
+      <Link className=" m-2 hover:text-primary" to="/shop">
         Shop
       </Link>
-      <Link className=" m-2 hover:text-yellow-400" to="/products">
+      <Link className=" m-2 hover:text-primary" to="/products">
         Products
       </Link>
-      <Link className=" m-2 hover:text-yellow-400" to="/cart">
+      <Link className=" m-2 hover:text-primary" to="/cart">
         Cart
       </Link>
     </>
@@ -37,9 +37,9 @@ const Navbar = () => {
             {/* Page content here */}
             <label
               htmlFor="my-drawer-4"
-              className="drawer-button"
+              className="drawer-button cursor-pointer"
             >
-              <i class="ri-menu-line"></i>
+              <i className="ri-menu-line hover:text-primary"></i>
             </label>
           </div>
           <div className="drawer-side">
@@ -53,18 +53,18 @@ const Navbar = () => {
               {/* profile and search section */}
               <span className="flex items-center justify-center gap-3">
                 <Link to="/search">
-                  <i class="ri-search-line hover:text-primary"></i>
+                  <i className="ri-search-line hover:text-primary"></i>
                 </Link>
                 <div>
                   <Link to="/cart">
-                    <i class="ri-shopping-cart-2-line hover:text-primary"></i>
+                    <i className="ri-shopping-cart-2-line hover:text-primary"></i>
                   </Link>
                   <sup className="text-xs bg-primary text-white rounded-full px-0.5 font-bold border">
                     0
                   </sup>
                 </div>
                 <Link to="/profile">
-                  <i class="ri-user-line hover:text-primary"></i>
+                  <i className="ri-user-line hover:text-primary"></i>
                 </Link>
               </span>
               <hr className="my-10" />
@@ -76,18 +76,18 @@ const Navbar = () => {
       {/* profile and search section */}
       <span className="hidden md:flex items-center justify-center gap-3">
         <Link to="/search">
-          <i class="ri-search-line hover:text-primary"></i>
+          <i className="ri-search-line hover:text-primary"></i>
         </Link>
         <div>
           <Link to="/cart">
-            <i class="ri-shopping-cart-2-line hover:text-primary"></i>
+            <i className="ri-shopping-cart-2-line hover:text-primary"></i>
           </Link>
           <sup className="text-xs bg-primary text-white rounded-full px-0.5 font-bold border">
             0
           </sup>
         </div>
         <Link to="/profile">
-          <i class="ri-user-line hover:text-primary"></i>
+          <i className="ri-user-line hover:text-primary"></i>
         </Link>
       </span>
     </div>
