@@ -7,6 +7,8 @@ const RatingStars = ({rating}) => {
             <span key={i} className={`ri-star${i <= rating ? "-fill" : "-line"}`}></span>
         )
     }
+
+    
     return (
         <div className='product__rating'>
             {stars}

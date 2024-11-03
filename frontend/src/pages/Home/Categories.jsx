@@ -13,9 +13,11 @@ const Categories = () => {
         {name: "Jersey", path: "jersey", image: category3},
         {name: "Polo T-shirt", path: "polo_t_shirt", image: category4},
     ]
-    console.log(categories)
 
     return (
+        <div>
+            
+        // <h2 className="section__header">Trending Products</h2>
         <div className='product__grid'>
             {
                 categories.map((category) =>(
@@ -25,6 +27,7 @@ const Categories = () => {
                     </Link>
                 ))
             }
+        </div>
         </div>
     );
 };

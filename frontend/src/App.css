@@ -296,12 +296,13 @@ nav {
 .deals__image {
   height: 100%;
   position: relative;
+  margin-top: 4rem;
 }
 
 .deals__image img {
   position: absolute;
   left: 50%;
-  bottom: -5rem;
+  bottom: -16rem;
   transform: translateX(-50%);
   max-width: 550px;
 }

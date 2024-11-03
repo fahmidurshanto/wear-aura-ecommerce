@@ -1,19 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import RatingStars from "../../components/RatingStars";
 
 const ProductCards = ({ products }) => {
-  const [visibleProducts, setVisibleProducts] = useState(8);
-  console.log(products);
-  const loadMoreProducts = () => {
-    setVisibleProducts((prevCount) => prevCount + 4);
-  };
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
       {products.map((product, index) => (
         <div key={index} className="product__card">
           <div className="relative">
-            <Link to={`/shop/${product._id}`}>
+            <Link to={`/shop/${index}`}>
               <img
                 src={product.image}
                 alt="Product Image"
