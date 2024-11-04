@@ -1,4 +1,5 @@
 
+import Blogs from "../Blogs/Blogs";
 import TrendingProducts from "../Shop/TrendingProducts";
 import Categories from "./Categories";
 import DealsSection from "./DealsSection";
@@ -15,6 +16,7 @@ const Home = () => {
            <TrendingProducts></TrendingProducts>
            <DealsSection></DealsSection>
            <PromoBanner></PromoBanner>
+           <Blogs></Blogs>
         </>
     );
 };

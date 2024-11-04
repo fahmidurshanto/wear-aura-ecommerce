@@ -17,7 +17,7 @@ const Categories = () => {
     return (
         <div>
             
-        // <h2 className="section__header">Trending Products</h2>
+        // <h2 className="section__header">Categories</h2>
         <div className='product__grid'>
             {
                 categories.map((category) =>(
