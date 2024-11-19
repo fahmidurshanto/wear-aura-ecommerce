@@ -1,7 +1,18 @@
 import { Link } from "react-router-dom";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { useSelector } from "react-redux";
+import { useState } from "react";
+import CartModal from "../pages/Shop/CartModal";
 
 const Navbar = () => {
+
+  const products = useSelector((state)=> state.cart.products);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const handleCartToggle = () =>{
+    setIsCartOpen(!isCartOpen);
+  };
+
+
+
   const navLinks = (
     <>
       <Link className=" m-2 hover:text-primary" to="/">
@@ -56,11 +67,11 @@ const Navbar = () => {
                   <i className="ri-search-line hover:text-primary"></i>
                 </Link>
                 <div>
-                  <Link to="/cart">
+                  <button onClick={handleCartToggle}>
                     <i className="ri-shopping-cart-2-line hover:text-primary"></i>
-                  </Link>
+                  </button>
                   <sup className="text-xs bg-primary text-white rounded-full px-0.5 font-bold border">
-                    0
+                   {products.length}
                   </sup>
                 </div>
                 <Link to="/profile">
@@ -79,17 +90,21 @@ const Navbar = () => {
           <i className="ri-search-line hover:text-primary"></i>
         </Link>
         <div>
-          <Link to="/cart">
+          <button onClick={handleCartToggle}>
             <i className="ri-shopping-cart-2-line hover:text-primary"></i>
-          </Link>
+          </button>
           <sup className="text-xs bg-primary text-white rounded-full px-0.5 font-bold border">
-            0
+           {products.length}
           </sup>
         </div>
         <Link to="/profile">
           <i className="ri-user-line hover:text-primary"></i>
         </Link>
       </span>
+
+      {
+        isCartOpen && <CartModal products={products} isOpen={isCartOpen} onClose={handleCartToggle}></CartModal>
+      }
     </div>
   );
 };

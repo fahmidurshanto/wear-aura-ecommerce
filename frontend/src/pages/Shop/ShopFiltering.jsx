@@ -5,7 +5,7 @@ const ShopFiltering = ({filters, filtersState, setFiltersState, clearFilters}) =
         <div className='space-y-5 flex-shrink-0'>
             <h3>Filters</h3>
             {/* categories */}
-            <div className='flex flex-col space-y-2'>
+            <div className='flex flex-row md:flex-col md:items-center gap-6 md:gap-0 space-y-2'>
                 <h4 className='font-medium text-lg'>Categories</h4>
                 <hr />
                 {
@@ -20,8 +20,8 @@ const ShopFiltering = ({filters, filtersState, setFiltersState, clearFilters}) =
             </div>
 
             {/* sizes */}
-            <div className='flex flex-col space-y-2'>
-                <h4 className='font-medium text-lg'>Sizes</h4>
+            <div className='flex flex-row md:flex-col md:items-center gap-6 md:gap-0 space-y-2'>
+                <h4 className='font-medium text-lg '>Sizes</h4>
                 <hr />
                 {
                     filters.sizes.map((size) => (
